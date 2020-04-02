@@ -1,0 +1,327 @@
+{
+  "race": [
+    {
+      "State": "Wisconsin"
+    },
+    {
+      "Population": 5795483
+    },
+    {
+      "Hispanic": 397847
+    },
+    {
+      "Non-HispanicWhite": 4706315
+    },
+    {
+      "Non-HispanicBlack": 362314
+    },
+    {
+      "Non-HispanicAsian": 158583
+    },
+    {
+      "Non-HispanicIndian": 44664
+    }
+  ],
+  "ageSex": [
+    {
+      "Geography": "Wisconsin"
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; Total": 5813568
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; Total": 2892273
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; Total": 2921295
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; Total - Under 5 years": 334382
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; Total - Under 5 years": 171036
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; Total - Under 5 years": 163346
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 5 to 9 years": 349799
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; Total - 5 to 9 years": 178917
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; Total - 5 to 9 years": 170882
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 10 to 14 years": 369348
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; Total - 10 to 14 years": 188956
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; Total - 10 to 14 years": 180392
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 15 to 19 years": 378418
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; Total - 15 to 19 years": 193230
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; Total - 15 to 19 years": 185188
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 20 to 24 years": 395921
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; Total - 20 to 24 years": 201013
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; Total - 20 to 24 years": 194908
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 25 to 29 years": 374435
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; Total - 25 to 29 years": 193420
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; Total - 25 to 29 years": 181015
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 30 to 34 years": 362942
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; Total - 30 to 34 years": 184584
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; Total - 30 to 34 years": 178358
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 35 to 39 years": 371797
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; Total - 35 to 39 years": 188315
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; Total - 35 to 39 years": 183482
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 40 to 44 years": 332919
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; Total - 40 to 44 years": 168401
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; Total - 40 to 44 years": 164518
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 45 to 49 years": 352344
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; Total - 45 to 49 years": 177384
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; Total - 45 to 49 years": 174960
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 50 to 54 years": 385213
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; Total - 50 to 54 years": 192156
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; Total - 50 to 54 years": 193057
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 55 to 59 years": 425757
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; Total - 55 to 59 years": 210643
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; Total - 55 to 59 years": 215114
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 60 to 64 years": 394820
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; Total - 60 to 64 years": 194865
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; Total - 60 to 64 years": 199955
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 65 to 69 years": 329181
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; Total - 65 to 69 years": 161017
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; Total - 65 to 69 years": 168164
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 70 to 74 years": 242442
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; Total - 70 to 74 years": 116405
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; Total - 70 to 74 years": 126037
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 75 to 79 years": 169120
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; Total - 75 to 79 years": 77104
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; Total - 75 to 79 years": 92016
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 80 to 84 years": 116094
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; Total - 80 to 84 years": 50093
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; Total - 80 to 84 years": 66001
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 85 years and over": 128636
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; Total - 85 years and over": 44734
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; Total - 85 years and over": 83902
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; Under 18 years": 1276103
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; Under 18 years": 652878
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; Under 18 years": 623225
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; Under 18 years - Under 5 years": 334382
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; Under 18 years - Under 5 years": 171036
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; Under 18 years - Under 5 years": 163346
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; Under 18 years - 5 to 13 years": 644783
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; Under 18 years - 5 to 13 years": 329829
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; Under 18 years - 5 to 13 years": 314954
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; Under 18 years - 14 to 17 years": 296938
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; Under 18 years - 14 to 17 years": 152013
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; Under 18 years - 14 to 17 years": 144925
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; 18 to 64 years": 3551992
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; 18 to 64 years": 1790042
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; 18 to 64 years": 1761950
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; 18 to 64 years - 18 to 24 years": 551765
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; 18 to 64 years - 18 to 24 years": 280274
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; 18 to 64 years - 18 to 24 years": 271491
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; 18 to 64 years - 25 to 44 years": 1442093
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; 18 to 64 years - 25 to 44 years": 734720
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; 18 to 64 years - 25 to 44 years": 707373
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; 18 to 64 years - 45 to 64 years": 1558134
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; 18 to 64 years - 45 to 64 years": 775048
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; 18 to 64 years - 45 to 64 years": 783086
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; 65 years and over": 985473
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; 65 years and over": 449353
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; 65 years and over": 536120
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; 85 years and over": 128636
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; 85 years and over": 44734
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; 85 years and over": 83902
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; 16 years and over": 4686277
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; 16 years and over": 2315476
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; 16 years and over": 2370801
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; 18 years and over": 4537465
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; 18 years and over": 2239395
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; 18 years and over": 2298070
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; 15 to 44 years": 2216432
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; 15 to 44 years": 1128963
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; 15 to 44 years": 1087469
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Both Sexes; Median age (years)": "39.6"
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Male; Median age (years)": "38.6"
+    },
+    {
+      "Population Estimate (as of July 1) - 2018 - Female; Median age (years)": "40.7"
+    }
+  ]
+}
