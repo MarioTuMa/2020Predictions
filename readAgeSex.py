@@ -14,42 +14,43 @@ l = f.columns.tolist()
 keep_col = []
 keep_col.append("Geography")
 for col in l:
-    if("2018" in col):
+    #print(col)
+    if("2012" in col):
         keep_col.append(col)
-
 new_f = f[keep_col]
-new_f.to_csv("ageSex.csv", index=False)
+new_f.to_csv("ageSex2012.csv", index=False)
 
-with open('ageSex.csv', newline='') as csvfile:
+with open('ageSex2012.csv', newline='') as csvfile:
     spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
     count = 0
     s = 0
 
-
+    count = 0
+    print(new_f)
     for row in spamreader:
+        print(row)
         if(count == 0):
             s = row
-            print(s)
-            print(len(s))
+            #print(s)
+            #print(len(s))
             count+=1
         else:
             print(len(row))
-            print(row)
-            print(row[0])
             row[0] = row[0].replace(" ","")
-            print(row[0])
+            print(row)
+            #print(row)
+
             a_file = open("data/"+row[0]+"/stats.json", "r")
             json_object = json.load(a_file)
-            json_object['ageSex']=[]
+
+            tempdata = {}
             a_file.close()
             for i in range(len(s)):
-                newobj = {}
                 if(RepresentsInt(row[i])):
-                    newobj[s[i]]=int(row[i])
-                else:
-                    newobj[s[i]]=row[i]
-                json_object['ageSex'].append(newobj)
-
+                    row[i]=int(row[i])
+                    #print(s[i])
+                    tempdata[s[i]]=row[i]
+            json_object['ageSex2012']=tempdata
             a_file = open("data/"+row[0]+"/stats.json", "w")
             json.dump(json_object, a_file)
             a_file.close()
