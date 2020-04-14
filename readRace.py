@@ -22,15 +22,16 @@ with open('race.csv', newline='') as csvfile:
             a_file.close()
             a_file = open("data/"+row[0]+"/stats.json", "r")
             json_object = json.load(a_file)
-            json_object['race']=[]
+            temp = {}
             a_file.close()
             for i in range(len(s)):
                 newobj = {}
                 if(RepresentsInt(row[i])):
-                    newobj[s[i]]=int(row[i])
+                    temp[s[i]]=int(row[i])
                 else:
-                    newobj[s[i]]=row[i]
-                json_object['race'].append(newobj)
+                    temp[s[i]]=row[i]
+                
+            json_object['race']=temp
             a_file = open("data/"+row[0]+"/stats.json", "w")
             json.dump(json_object, a_file)
             a_file.close()

@@ -1,6 +1,8 @@
 import csv
 import json
 import pandas as pd
+import sys
+year = str(sys.argv[1])
 def RepresentsInt(s):
     try:
         int(s)
@@ -15,12 +17,12 @@ keep_col = []
 keep_col.append("Geography")
 for col in l:
     #print(col)
-    if("2012" in col):
+    if(year in col):
         keep_col.append(col)
 new_f = f[keep_col]
-new_f.to_csv("ageSex2012.csv", index=False)
+new_f.to_csv("ageSex"+year+".csv", index=False)
 
-with open('ageSex2012.csv', newline='') as csvfile:
+with open('ageSex'+year+'.csv', newline='') as csvfile:
     spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
     count = 0
     s = 0
@@ -50,7 +52,7 @@ with open('ageSex2012.csv', newline='') as csvfile:
                     row[i]=int(row[i])
                     #print(s[i])
                     tempdata[s[i]]=row[i]
-            json_object['ageSex2012']=tempdata
+            json_object['ageSex'+year]=tempdata
             a_file = open("data/"+row[0]+"/stats.json", "w")
             json.dump(json_object, a_file)
             a_file.close()
