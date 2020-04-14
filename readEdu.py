@@ -49,7 +49,7 @@ with open('whiteedu.csv') as csvfile:
             # tempdata = {}
             a_file.close()
             json_object['race']['whitecollege'] = int(row[1])
-            json_object['race']['whiteNonCollege'] = json_object['race']['Non-HispanicWhite'] - int(row[1])
+            json_object['race']['whiteNonCollege'] = json_object['race']['Total Population: Not Hispanic or Latino: White Alone'] - int(row[1])
             # for i in range(len(s)):
             #     if(RepresentsInt(row[i])):
             #         row[i]=int(row[i])
