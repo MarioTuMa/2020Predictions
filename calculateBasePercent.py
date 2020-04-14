@@ -35,6 +35,11 @@ a30to44 = 55.43478261
 a45to64 = 45.83333333
 a65plus = 46.39175258
 
+totwc = 0
+totwn = 0
+totb = 0
+toth = 0
+toto = 0
 with open('states.csv', newline='') as csvfile:
     states = csv.reader(csvfile, delimiter=',', quotechar='|')
     count = 0
@@ -59,7 +64,15 @@ with open('states.csv', newline='') as csvfile:
         lturnout = turnoutlatino * json_object['race']['Total Population: Hispanic or Latino']
         aturnout = turnoutother * json_object['race']['Total Population: Not Hispanic or Latino: Asian Alone']
         oturnout = turnoutother * (otherPop)
+
+        totwc+= json_object['race']['whitecollege']
+        totwn+= json_object['race']['whiteNonCollege']
+        totb += json_object['race']['Total Population: Not Hispanic or Latino: Black or African American Alone']
+        toth += json_object['race']['Total Population: Hispanic or Latino']
+        toto +=  (otherPop) + json_object['race']['Total Population: Not Hispanic or Latino: Asian Alone']
+
         turnout += wcturnout + wnturnout + bturnout + lturnout + oturnout + aturnout
+
 
         sum = 0
         sum += whitecollege * wcturnout / turnout
@@ -69,42 +82,62 @@ with open('states.csv', newline='') as csvfile:
         sum += asian * aturnout / turnout
         sum += other * oturnout  / turnout
 
-        print(state,sum)
 
-    #print(states)
+
+        print(state,sum)
 #
-# with open('states.csv', newline='') as csvfile:
-#     states = csv.reader(csvfile, delimiter=',', quotechar='|')
-#     age1 = 67.74193548
-#     age2 = 63.04347826
-#     age3 = 60.21505376
-#     age4 = 54.25531915
-#     age5 = 51.57894737
-#     age6 = 49.48453608
-#     print("Age")
-#     for state in states:
-#         state = state[0]
-#         a_file = open("data/"+state+"/stats.json", "r")
-#         json_object = json.load(a_file)
-#         a_file.close()
-#         sum = 0
-#
-#
-#         #print(state)
-#         pop = json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total'] - json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Under 18 years']
-#         #print(pop)
-#         sum += age1 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; 18 to 64 years - 18 to 24 years'] / pop
-#         sum += age2 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 25 to 29 years'] / pop
-#         sum += age3 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 30 to 34 years'] / pop
-#         sum += age3 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 35 to 39 years'] / pop
-#         sum += age4 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 40 to 44 years'] / pop
-#         sum += age4 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 45 to 49 years'] / pop
-#         sum += age5 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 50 to 54 years'] / pop
-#         sum += age5 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 55 to 59 years'] / pop
-#         sum += age5 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 60 to 64 years'] / pop
-#         sum += age6 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 65 to 69 years'] / pop
-#         sum += age6 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 70 to 74 years'] / pop
-#         sum += age6 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 75 to 79 years'] / pop
-#         sum += age6 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 80 to 84 years'] / pop
-#         sum += age6 * json_object['ageSex2018']["Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 85 years and over"] / pop
-#         print(state,sum)
+with open('states.csv', newline='') as csvfile:
+    states = csv.reader(csvfile, delimiter=',', quotechar='|')
+    age1 = 67.74193548
+    age2 = 63.04347826
+    age3 = 60.21505376
+    age4 = 54.25531915
+    age5 = 51.57894737
+    age6 = 49.48453608
+
+    turnoutage1829 = 46.1
+    turnoutage3044 = 58.7
+    turnoutage4564 = 66.6
+    turnout65more = 70.9
+
+    print("Age")
+    for state in states:
+        state = state[0]
+        a_file = open("data/"+state+"/stats.json", "r")
+        json_object = json.load(a_file)
+        a_file.close()
+        sum = 0
+
+        turnout = 0
+        turnout += turnoutage1829 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; 18 to 64 years - 18 to 24 years']
+        turnout += turnoutage1829 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 25 to 29 years']
+        turnout += turnoutage3044 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 30 to 34 years']
+        turnout += turnoutage3044 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 35 to 39 years']
+        turnout += turnoutage3044 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 40 to 44 years']
+        turnout += turnoutage4564 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 45 to 49 years']
+        turnout += turnoutage4564 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 50 to 54 years']
+        turnout += turnoutage4564 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 55 to 59 years']
+        turnout += turnoutage4564 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 60 to 64 years']
+        turnout += turnout65more * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 65 to 69 years']
+        turnout += turnout65more * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 70 to 74 years']
+        turnout += turnout65more * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 75 to 79 years']
+        turnout += turnout65more * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 80 to 84 years']
+        turnout += turnout65more * json_object['ageSex2018']["Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 85 years and over"]
+
+        #print(state)
+        #print(pop)
+        sum += age1 * turnoutage1829 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; 18 to 64 years - 18 to 24 years'] / turnout
+        sum += age2 * turnoutage1829 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 25 to 29 years'] / turnout
+        sum += age3 * turnoutage3044 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 30 to 34 years'] / turnout
+        sum += age3 * turnoutage3044 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 35 to 39 years'] / turnout
+        sum += age4 * turnoutage3044 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 40 to 44 years'] / turnout
+        sum += age4 * turnoutage4564 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 45 to 49 years'] / turnout
+        sum += age5 * turnoutage4564 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 50 to 54 years'] / turnout
+        sum += age5 * turnoutage4564 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 55 to 59 years'] / turnout
+        sum += age5 * turnoutage4564 * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 60 to 64 years'] / turnout
+        sum += age6 * turnout65more * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 65 to 69 years'] / turnout
+        sum += age6 * turnout65more * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 70 to 74 years'] / turnout
+        sum += age6 * turnout65more * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 75 to 79 years'] / turnout
+        sum += age6 * turnout65more * json_object['ageSex2018']['Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 80 to 84 years'] / turnout
+        sum += age6 * turnout65more * json_object['ageSex2018']["Population Estimate (as of July 1) - 2018 - Both Sexes; Total - 85 years and over"] / turnout
+        print(state,sum)
